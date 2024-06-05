@@ -2,7 +2,6 @@ import express from 'express'
 import cors from 'cors'
 import path from 'path'
 import router from './router/index.js'
-import path from 'path'
 import dotenv from 'dotenv'
 dotenv.config()
 
@@ -10,7 +9,7 @@ const PORT = process.env.PORT || config.get('serverPort')
 
 const app = express()
 const corsOptions ={
-    origin:'http://localhost:3000',
+    origin:'http://87.228.8.200/',
     credentials:true,
     optionSuccessStatus:200
 }
